@@ -1,0 +1,26 @@
+# IDE project files
+*.kdev4
+.idea
+.vs
+*.swp
+*.vim
+*.vimrc
+
+# Caches
+.cache/*
+*.pyc
+
+# Other
+x64/
+*~
+*_BACKUP_*
+*_BASE_*
+*_LOCAL_*
+*_REMOTE_*
+*.backup
+*.orig
+*.stackdump
+*.user
+.\#*
+\#*\#
+build/
