@@ -13,7 +13,8 @@ Uses plotting library [matplotplusplus](https://github.com/alandefreitas/matplot
 
 ## Configure and build project
 
-For linux:
+Example using clang++ compiler. Replace `clang++` with `g++` if using gcc.
+
 ```sh
 mkdir build
 cmake -S .. -B . -DCMAKE_CXX_COMPILER=clang++ -DWARNINGS=ON -DWARNINGS_AS_ERRORS=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
