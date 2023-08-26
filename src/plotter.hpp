@@ -59,7 +59,8 @@ class plot_natural_numbers
 {
 public:
     explicit plot_natural_numbers(const number_t begin, const number_t end, const bool save)
-        : m_number_range{ begin, end }, m_save{save}
+        : m_number_range{ begin, end }
+        , m_save{ save }
     {}
 
     void plot_all_natural_numbers() const
@@ -68,10 +69,10 @@ public:
         auto radius = matplot::iota(number_begin, number_end);
         auto angle = matplot::iota(number_begin, number_end);
 
-        detail::plot_values(radius, angle, std::format("Natural numbers {}:{}", number_begin, number_end));
-        if (m_save)
+        detail::plot_values(radius, angle, std::format("Natural numbers between {}:{}", number_begin, number_end));
+        if(m_save)
         {
-            matplot::save("img/all_natural_numbers.svg");
+            matplot::save("img/natural_numbers.svg");
         }
     }
 
@@ -92,8 +93,8 @@ public:
         }
         radius.shrink_to_fit();
         angle.shrink_to_fit();
-        detail::plot_values(radius, angle, std::format("Prime numbers {}:{}", number_begin, number_end));
-        if (m_save)
+        detail::plot_values(radius, angle, std::format("Prime numbers between {}:{}", number_begin, number_end));
+        if(m_save)
         {
             matplot::save("img/prime_numbers.svg");
         }
