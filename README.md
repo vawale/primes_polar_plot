@@ -1,9 +1,9 @@
 # Plotting prime numbers
 
 Explore plotting prime numbers in polar coordinates. Inspired by:
-https://www.youtube.com/watch?v=EK32jo7i5LQ
+[Why do prime numbers make these spirals?](https://www.youtube.com/watch?v=EK32jo7i5LQ) and concept of primes as figure or ground introduced in [Godel, Escher, and Bach](https://www.google.no/books/edition/G%C3%B6del_Escher_Bach/grzEQgAACAAJ?hl=en).
 
-Uses plotting library matplotplusplus - https://github.com/alandefreitas/matplotplusplus
+Uses plotting library [matplotplusplus](https://github.com/alandefreitas/matplotplusplus).
 
 ## Setup requirements
 
@@ -22,7 +22,7 @@ cmake --build . -j12
 
 ### Buildtime dependencies
 
-Needs matplotplusplus - https://github.com/alandefreitas/matplotplusplus library for build. The latest master branch of matplotplusplus is downloaded and built as part of cmake project.
+Needs [matplotplusplus](https://github.com/alandefreitas/matplotplusplus) library for build. The latest master branch of matplotplusplus is downloaded and built as part of cmake project.
 
 ### Runtime dependencies
 
